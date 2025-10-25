@@ -267,3 +267,18 @@
 2025-10-25 21:24:44, SELF, v:1, k:poo@roupa, rate:100, iagen:gpt, guide:aula__video, alone:8, study:100
 2025-10-25 21:25:10, MOVE, v:1, k:poo@relogio, mode:PICK
 2025-10-25 21:25:14, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-25 21:45:42, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-25 22:54:44, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-25 23:03:15, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-25 23:03:17, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:115
+2025-10-25 23:03:30, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:115
+2025-10-25 23:03:34, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0
+2025-10-25 23:06:41, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:115
+2025-10-25 23:06:59, EXEC, v:1, k:poo@motoca, mode:FULL, rate:100, size:118
+2025-10-25 23:07:11, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:115
+2025-10-25 23:10:50, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:118
+2025-10-25 23:10:54, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0
+2025-10-25 23:12:20, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:116
+2025-10-25 23:18:13, EXEC, v:1, k:poo@motoca, mode:FULL, rate:100, size:116
+2025-10-25 23:18:24, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-25 23:26:35, SELF, v:1, k:poo@camisa, rate:100, human:_, iagen:_, guide:_, other:_, alone:7, study:30
