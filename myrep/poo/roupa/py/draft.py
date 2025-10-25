@@ -1,27 +1,43 @@
 class Roupa:
     def __init__(self):
-        self.tamanho = None
+        self.__tamanho = ""
 
-    def setTamanho(self, valor):
-        tamanhos_validos = ["PP","P","M","G","GG","XG"]
+    def getTamanho(self) -> str:
+        return self.__tamanho
+
+    def setTamanho(self, valor) -> bool:
+        tamanhos_validos =["PP","P","M","G","GG","XG"]
         valor = valor.strip().upper()
 
         if valor in tamanhos_validos:
-            self.tamanho = valor 
-            
-            print(f"Tamanho da roupa escolhido como{self.tamanho} .")
+            self.__tamanho = valor 
             return True
-
+    
         else:
-            print(f"Tamanho inválido! Os tamanhos permitidos são: {', '.join(tamanhos_validos)}.")
+            print("fail: Valor inválido, tente PP, P, M, G, GG ou XG")
             return False
 
-if _name=="main_":
+    def show(self):
+        tamanho_str = self.__tamanho 
+        print(f"size: ({tamanho_str})")
+
+if __name__== "__main__":
     roupa = Roupa()
 
     while True:
-        tamanho_input = input ("Escolha o tamanho da roupa (PP,P,M,G,GG,XG):")    
-        if roupa.setTamanho(tamanho_input):
-            break
+        comando = input().strip().split()
 
-    print(f"Tamanho final da roupa {roupa.tamanho}.")
+        if not comando:
+            continue
+
+        if comando[0] == "show":
+            print("$show")
+            roupa.show()
+
+        elif comando[0] == "size" and len(comando) > 1:
+            print(f"$size {comando[1]}")
+            roupa.setTamanho(comando[1])
+
+        elif comando[0] == "end":
+            print("$end")
+            break
