@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-25_18-13-59",
+            "content": "@@ -481,16 +481,17 @@\n __name__\n+_\n ==%22__mai\n@@ -494,17 +494,16 @@\n _main__%22\n-:\n %0A    Chi\n@@ -702,17 +702,17 @@\n      if \n-C\n+c\n hinela.s\n@@ -751,16 +751,20 @@\n   break%0A\n+    \n         \n@@ -875,17 +875,17 @@\n chinela%7B\n-C\n+c\n hinela.t\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-25_18-31-25",
+            "content": "class Chinela:\n def __init__(self):\n    self.tamanho = 0\n\n def setTamanho(self, valor):\n    if not isinstance(valor, int):\n        print(\"Erro, resposta invalida\")\n        return False\n\n    if valor < 20 or valor > 50:\n        print (\"Erro, s\u00f3 pode entre 20 e 50\")\n        return False\n\n    if valor % 2 != 0:\n        print(\"Erro, s\u00f3 pode n\u00famero par\")\n        return False\n\n\n    self.tamanho = valor \n    print(f\"tamanho da chinela escolhido {self.tamanho}.\")\n    return True\n\nif __name__==\"__main__\":\n    Chinela = Chinela()\n\n\n    while True:\n        try:\n            valor = int(input(\"digite aqui o tamanho da porcaria dessa sua chinela de merda(20 a 50, apeas merdas de n\u00fameros pares): \"))\n            if Chinela.setTamanho(valor):\n                break\n        except ValueError:\n                print(\"digita um n\u00famero inteiro porra!\")\n\n        print(f\"tamanho da chinela{Chinela.tamanho}\")",
+            "lines": "35"
+        }
+    ]
+}

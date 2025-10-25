@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-25_18-42-49",
+            "content": "@@ -1,395 +0,0 @@\n-  class Roupa:%0A    def __init__(self):%0A        self.tamanho = %22%22%0A%0A    def setTamanho(self, valor):%0A        tamanhos_validos =%5B%22PP%22,%22P%22,%22M%22,%22G%22,%22GG%22,%22XG%22%5D%0A        valor=valor.strip().upper()%0A%0A        if valor in tamanho_validos:%0A            self.tamanho = valor %0A            print(f%22Tamanho da roupa escolhido como%7Bself.tamanho%7D .%22)%0A            return True%0A%0A        else:%0A            print (%22f%22)%0A\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-25_20-08-44",
+            "content": "  class Roupa:\n    def __init__(self):\n        self.tamanho = \"\"\n\n    def setTamanho(self, valor):\n        tamanhos_validos =[\"PP\",\"P\",\"M\",\"G\",\"GG\",\"XG\"]\n        valor=valor.strip().upper()\n\n        if valor in tamanho_validos:\n            self.tamanho = valor \n            print(f\"Tamanho da roupa escolhido como{self.tamanho} .\")\n            return True\n\n        else:\n            print (\"f\")\n",
+            "lines": "15"
+        }
+    ]
+}
