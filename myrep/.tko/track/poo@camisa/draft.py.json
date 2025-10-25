@@ -7,8 +7,13 @@
         },
         {
             "label": "2025-10-25_20-08-44",
-            "content": "  class Roupa:\n    def __init__(self):\n        self.tamanho = \"\"\n\n    def setTamanho(self, valor):\n        tamanhos_validos =[\"PP\",\"P\",\"M\",\"G\",\"GG\",\"XG\"]\n        valor=valor.strip().upper()\n\n        if valor in tamanho_validos:\n            self.tamanho = valor \n            print(f\"Tamanho da roupa escolhido como{self.tamanho} .\")\n            return True\n\n        else:\n            print (\"f\")\n",
+            "content": "@@ -203,33 +203,32 @@\n valor in tamanho\n-s\n _validos:%0A      \n@@ -221,16 +221,16 @@\n alidos:%0A\n+\n         \n@@ -385,315 +385,11 @@\n rint\n-(f%22Tamanho inv%C3%A1lido! Os tamanhos permitidos s%C3%A3o: %7B', '.join(tamanhos_validos)%7D.%22)%0A            return False%0A%0Aif __name__==%22__main__%22:%0A    roupa = Roupa%0A%0A    while True%0A        tamanho_input = input (%22Escolha o tamanho da roupa(PP,P,M,G,GG,GX):%22)    %0A        if roupa .setTamanho(tamanho_input):%0A            break\n+ (%22f%22)%0A\n",
             "lines": "15"
+        },
+        {
+            "label": "2025-10-25_20-29-37",
+            "content": "  class Roupa:\n    def __init__(self):\n        self.tamanho = \"\"\n\n    def setTamanho(self, valor):\n        tamanhos_validos =[\"PP\",\"P\",\"M\",\"G\",\"GG\",\"XG\"]\n        valor=valor.strip().upper()\n\n        if valor in tamanhos_validos:\n            self.tamanho = valor \n            print(f\"Tamanho da roupa escolhido como{self.tamanho} .\")\n            return True\n\n        else:\n            print(f\"Tamanho inv\u00e1lido! Os tamanhos permitidos s\u00e3o: {', '.join(tamanhos_validos)}.\")\n            return False\n\nif __name__==\"__main__\":\n    roupa = Roupa\n\n    while True\n        tamanho_input = input (\"Escolha o tamanho da roupa(PP,P,M,G,GG,GX):\")    \n        if roupa .setTamanho(tamanho_input):\n            break",
+            "lines": "24"
         }
     ]
 }

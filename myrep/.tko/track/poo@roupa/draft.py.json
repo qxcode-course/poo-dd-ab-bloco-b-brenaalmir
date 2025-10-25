@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-25_20-41-40",
+            "content": "@@ -18,14 +18,16 @@\n def \n+_\n _init_\n+_\n (sel\n@@ -495,21 +495,27 @@\n %0Aif \n+_\n _name\n+__\n ==%22\n+__\n main_\n+_\n %22:%0A \n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-25_20-43-31",
+            "content": "class Roupa:\n    def _init_(self):\n        self.tamanho = \"\"\n\n    def setTamanho(self, valor):\n        tamanhos_validos =[\"PP\",\"P\",\"M\",\"G\",\"GG\",\"XG\"]\n        valor=valor.strip().upper()\n\n        if valor in tamanhos_validos:\n            self.tamanho = valor \n            print(f\"Tamanho da roupa escolhido como{self.tamanho} .\")\n            return True\n\n        else:\n            print(f\"Tamanho inv\u00e1lido! Os tamanhos permitidos s\u00e3o: {', '.join(tamanhos_validos)}.\")\n            return False\n\nif _name==\"main_\":\n    roupa = Roupa()\n\n    while True:\n        tamanho_input = input (\"Escolha o tamanho da roupa (PP,P,M,G,GG,XG):\")    \n        if roupa.setTamanho(tamanho_input):\n            break\n\n    print(f\"Tamanho final da roupa {roupa.tamanho}.\")",
+            "lines": "26"
+        }
+    ]
+}

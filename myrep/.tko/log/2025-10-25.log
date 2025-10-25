@@ -231,3 +231,17 @@
 2025-10-25 20:09:27, MOVE, v:1, k:poo@chinela, mode:PICK
 2025-10-25 20:09:35, MOVE, v:1, k:poo@chinela, mode:BACK
 2025-10-25 20:11:21, SELF, v:1, k:poo@chinela, rate:100, human:_sim, iagen:gpt, guide:aula, alone:8, study:50
+2025-10-25 20:24:05, SELF, v:1, k:poo@chinela, rate:100, human:_sim, iagen:gpt, guide:aula, alone:10, study:50
+2025-10-25 20:25:37, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-25 20:29:05, MOVE, v:1, k:poo@roupa, mode:BACK
+2025-10-25 20:29:37, EXEC, v:1, k:poo@camisa, mode:FREE, size:24
+2025-10-25 20:29:40, MOVE, v:1, k:poo@motoca, mode:DOWN
+2025-10-25 20:29:46, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-25 20:39:40, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-25 20:40:46, SELF, v:1, k:poo@camisa, rate:10, alone:6, study:1
+2025-10-25 20:41:16, SELF, v:1, k:poo@camisa, rate:10, alone:6, study:1
+2025-10-25 20:41:21, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-25 20:41:36, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-25 20:41:40, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:26
+2025-10-25 20:42:59, SELF, v:1, k:poo@camisa, rate:10, guide:p, alone:6, study:100
+2025-10-25 20:43:31, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:26
