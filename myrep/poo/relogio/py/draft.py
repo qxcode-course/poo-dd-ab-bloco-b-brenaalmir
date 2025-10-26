@@ -49,7 +49,7 @@ def main():
 
     while True:
         try:
-            line = input().strip()
+            line = input()
         except EOFError:
             break
         if not line:
@@ -61,26 +61,23 @@ def main():
         if op == "end":
             print("$end")
             break
-
         elif op == "show":
-            print("$show")
+            # Todos os testes que você enviou usam $show. com ponto final
+            print("$show.")
             print(relogio)
-
         elif op == "set":
-            print(f"$set {cmd[1]} {cmd[2]} {cmd[3]}")
             h, m, s = int(cmd[1]), int(cmd[2]), int(cmd[3])
+            print(f"$set {h:02d} {m:02d} {s:02d}")
             relogio.set_hora(h)
             relogio.set_min(m)
             relogio.set_seg(s)
-
         elif op == "init":
-            print(f"$init {cmd[1]} {cmd[2]} {cmd[3]}")
             h, m, s = int(cmd[1]), int(cmd[2]), int(cmd[3])
+            print(f"$init {h:02d} {m:02d} {s:02d}")
             relogio = Hora()
             relogio.set_hora(h)
             relogio.set_min(m)
             relogio.set_seg(s)
-
         elif op == "next":
             print("$next")
             relogio.next_second()
