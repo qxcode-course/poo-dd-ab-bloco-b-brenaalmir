@@ -1,0 +1,5 @@
+2025-10-26 00:17:46, EXEC, v:1, k:poo@motouber, mode:FULL, rate:0, size:18
+2025-10-26 00:17:52, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-26 00:18:22, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-26 00:20:58, MOVE, v:1, k:poo@grafite, mode:DOWN
+2025-10-26 00:42:01, MOVE, v:1, k:poo@motouber, mode:BACK

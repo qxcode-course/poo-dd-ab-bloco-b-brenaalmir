@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-26_00-17-46",
+            "content": "class Pessoa:\n    def __init__(self, nome: str, dinheiro: int):\n        self.__nome = nome\n        self.__dinheiro = dinheiro\n\n    def getNome(self) -> int:\n        return self.__nome\n\n    def getDinheiro(self) -> int:\n        return self.__dinheiro\n\n    def setDinheiro(self, valor: int):\n        self.__dinheiro = valor\n\n    def __str__(self) -> str:\n        return f\"{self.__nome}:{self.__dinheiro}\"\n\n\n",
+            "lines": "18"
+        }
+    ]
+}
