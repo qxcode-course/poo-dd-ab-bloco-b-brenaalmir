@@ -54,4 +54,50 @@ class Moto:
             self.__passageiro.setDinheiro(dinheiro_pass - custo)
             self.__motorista.setDinheiro(dinheiro_motorista + custo)
             print(f"{self.__passageiro.getNome()}:{self.__passageiro.getDinheiro()} left")
-        
+
+        self.__custo = 0
+        self.__passageiro = None
+
+    def __str__(self):
+        motorista = str(self.__motorista) if self.__motorista else "None"
+        passageiro = str(self.__passageiro) if self.__passageiro else "None"
+        return f"Cost: {self.__custo}, Driver: {motorista}, Passenger: {passageiro}"
+
+    
+def main():
+    moto = Moto()
+    while True:
+        line = input().strip()
+        if not line:
+            continue
+        print(f"${line}")
+        args = line.split()
+
+        if args[0] == "end":
+            break
+            
+        elif args[0] == "show":
+            print(moto)
+
+        elif args[0] == "setDriver":
+            nome = args[1]
+            dinheiro = int(args[2])
+            moto.setMotorista(nome, dinheiro)
+
+        elif args[0] == "setPass":
+            nome = args[1]
+            dinheiro = int(args[2])
+            moto.setPassageiro(nome, dinheiro)
+
+        elif args[0] == "drive":
+            km = int(args[1])
+            moto.dirigir(km)
+
+        elif args[0] == "leavePass":
+            moto.deixarPassageiro()
+
+        else:
+            print("fail: invalid command")
+
+if __name__ == "__main__":
+    main()

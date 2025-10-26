@@ -23,6 +23,7 @@ tasks:
   poo@relogio: '{rate:46}'
   poo@motoca: '{rate:100}'
   poo@grafite: '{rate:100, human:p, guide:p, alone:8, study:106}'
+  poo@motouber: '{rate:100, human:_, alone:7, study:120}'
 flags:
   quests: 0
   tracks: 0
@@ -30,4 +31,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@grafite
+selected: poo@motouber
