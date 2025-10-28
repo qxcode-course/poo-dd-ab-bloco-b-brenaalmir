@@ -13,7 +13,7 @@ class Bateria:
         self.__carga = max(0, min(valor, self.__capacidade))
 
     def usar(self, tempo: int):
-        if tempo > self.__carga:
+        if tempo >= self.__carga:
             usado = self.__carga
             self.__carga = 0
             return usado, True
@@ -108,15 +108,17 @@ class Notebook:
 
         if self.__bateria and not self.__carregador:
             usado, descarregou = self.__bateria.usar(tempo)
-            self.__tempo_uso += usado
             if descarregou:
+                self.__tempo_uso += usado
                 print("fail: descarregou")
                 self.__ligado = False
+            else:
+                self.__tempo_uso += tempo
             return
 
         if self.__bateria and self.__carregador:
             self.__tempo_uso += tempo
-            ganho = self.__carregador.getPotencia() * tempo - tempo
+            ganho = tempo * self.__carregador.getPotencia()
             self.__bateria.carregar(ganho)
             return
 

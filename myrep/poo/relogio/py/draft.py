@@ -48,10 +48,7 @@ def main():
     relogio = Hora()
 
     while True:
-        try:
-            line = input()
-        except EOFError:
-            break
+        line = input()
         if not line:
             continue
 
@@ -62,8 +59,7 @@ def main():
             print("$end")
             break
         elif op == "show":
-            # Todos os testes que você enviou usam $show. com ponto final
-            print("$show.")
+            print("$show")
             print(relogio)
         elif op == "set":
             h, m, s = int(cmd[1]), int(cmd[2]), int(cmd[3])

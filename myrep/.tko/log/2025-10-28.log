@@ -1,0 +1,10 @@
+2025-10-28 15:17:12, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-28 15:17:39, EXEC, v:1, k:poo@relogio, mode:FULL, rate:46, size:83
+2025-10-28 15:17:42, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-28 15:18:47, SELF, v:1, k:poo@relogio, rate:46, human:_, iagen:_, guide:_, alone:7, study:240
+2025-10-28 15:18:59, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-28 15:19:19, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-28 15:20:36, SELF, v:1, k:poo@notebook, rate:100, human:_, iagen:_, guide:_, alone:9, study:560
+2025-10-28 15:21:00, SELF, v:1, k:poo@notebook, rate:100, human:_, iagen:_, guide:_, alone:9, study:240
+2025-10-28 15:22:02, SELF, v:1, k:poo@charger, rate:100, human:_, iagen:_, guide:_, alone:7, study:600
+2025-10-28 15:22:54, SELF, v:1, k:poo@tamagotchi, rate:100, human:_, iagen:_, guide:_, alone:6, study:640
